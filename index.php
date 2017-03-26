@@ -24,7 +24,7 @@ $decode3 = file_get_contents ($url3);
 return json_decode ($decode3);
 }
 
-$btcUSD2 = getPriceusd2('http://api.coindesk.com/v1/bpi/currentprice.json');
+$btcUSD2 = getPriceusd2('https://api.coindesk.com/v1/bpi/currentprice.json');
 $btcPriceusd2 = $btcUSD2->bpi->USD->rate;
 
 
@@ -84,7 +84,7 @@ function tar (input) {
 <div class="container-fluid">
 <div class="row">
 		<div class="col-md-1">
-			<img alt="Logo" src="http://www.bitcoinmty.com/images/bitcoinMty-logoc.png" class="img-circle">
+			<img alt="Logo" src="https://www.bitcoinmty.com/images/bitcoinMty-logoc.png" class="img-circle">
 		</div>
 		<div class="col-md-11">
 			<h3 class="text-center">
@@ -118,7 +118,7 @@ Recarga automatica cada 5 minutos
 Cotizacion del Peso ante el dolar</h3>
 </div>
 				<div class="panel-body">
-<iframe frameborder="0" scrolling="no" height="68" width="273" allowtransparency="true" marginwidth="0" marginheight="0" src="http://fxrates.mx.forexprostools.com/index.php?force_lang=49&pairs_ids=39;&header-text-color=%23FFFFFF&curr-name-color=%230059b0&inner-text-color=%23000000&green-text-color=%232A8215&green-background=%23B7F4C2&red-text-color=%23DC0001&red-background=%23FFE2E2&inner-border-color=%23CBCBCB&border-color=%23cbcbcb&bg1=%23F6F6F6&bg2=%23ffffff&bid=show&ask=show&last=hide&open=hide&high=hide&low=hide&change=hide&last_update=hide"></iframe>
+<iframe frameborder="0" scrolling="no" height="68" width="273" allowtransparency="true" marginwidth="0" marginheight="0" src="https://sslfxrates.forexprostools.com/index.php?force_lang=49&pairs_ids=39;&header-text-color=%23FFFFFF&curr-name-color=%230059b0&inner-text-color=%23000000&green-text-color=%232A8215&green-background=%23B7F4C2&red-text-color=%23DC0001&red-background=%23FFE2E2&inner-border-color=%23CBCBCB&border-color=%23cbcbcb&bg1=%23F6F6F6&bg2=%23ffffff&bid=show&ask=show&last=hide&open=hide&high=hide&low=hide&change=hide&last_update=hide"></iframe>
 </div>
 				<div class="panel-footer">
                                 Informacion en tiempo real
@@ -133,9 +133,9 @@ Cotizacion del Peso ante el dolar</h3>
  <i class="fa fa-btc"></i> <input type="text" name="bitcoin" class="form-control" id="bit" onchange="btcConvert(this);" onkeyup="btcConvert(this);"   />BTC  = <i class="fa fa-usd"></i><input type="text" class="form-control" name="mxn" id="mxn" onchange="mxnConvert(this);" onkeyup="mxnConvert(this);"  /> MXN 
  </div><div  class="row" align="center" style="background-color: #F7D358;"><p class="text-primary"><strong>Enviar un pago (ATM)</br>
  Escribe la direccion a donde deseas enviar tu pago, <mark>el valor sera tomado de la calculadora en bitcoins.</mark></br>
-Direccion:<input type="text" name="address" class="form-control" id="address" size="41" /> <a href="http://atm.bitcoinmty.com/qr/index.html" 
+Direccion:<input type="text" name="address" class="form-control" id="address" size="41" /> <a href="https://atm.bitcoinmty.com/qr/index.html" 
   target="popup" 
-  onclick="window.open('http://atm.bitcoinmty.com/qr/index.html','popup','width=400,height=400'); return false;">
+  onclick="window.open('https://atm.bitcoinmty.com/qr/index.html','popup','width=400,height=400'); return false;">
 <img src="1441121020_qr_code.png" width="32" height="32" title="QR" alt="QR">
 </a>  Tarifa:<input type="text" name="tarifa" class="form-control" id="tarifa" size="5" value="0" onchange="tar(this);" onkeyup="tar(this);" /> % <input type="radio" name="tipo" value="compra">Compra <input type="radio" name="tipo" value="venta">Venta</br> 
 Etiqueta:<input type="text" class="form-control" name="label" id="label" value="BitcoinMTY" size="10" readonly="true" disabled/>   Mensaje:<input type="text" name="message" class="form-control" id="message" value="VirtualATM" size="10" readonly="true" disabled/>
