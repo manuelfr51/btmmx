@@ -62,7 +62,7 @@ Diferencia porcentual: <?php echo htmlspecialchars($porcent, ENT_QUOTES, 'UTF-8'
 </br>
 <div>
   <div id="effect" style="display:none;">
-    <h3">Habilitar blockchain.info</h3>
+    <h3>Habilitar blockchain.info</h3>
     <p>
       Para habilitar los pagos con tu wallet de blockchain.info dando click en el enlace "Enviar con blockchain.info", deberas habilitar la lectura de enlaces bitcoin desde tu cartera en: Configuracion de cuenta/General/ como se muestra en la siguiente imagen</br>
       <img src=uri.png /></br>
