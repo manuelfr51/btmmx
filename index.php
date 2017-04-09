@@ -24,7 +24,7 @@ function getPriceusd2($url3) {
     return json_decode ($decode3);
 }
 
-$btcUSD2 = getPriceusd2('http://api.coindesk.com/v1/bpi/currentprice.json');
+$btcUSD2 = getPriceusd2('https://api.coindesk.com/v1/bpi/currentprice.json');
 $btcPriceusd2 = $btcUSD2->bpi->USD->rate;
 
 
@@ -85,7 +85,7 @@ $btcDisplay3 = round($btcPriceusd2, 2);
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-1">
-           <img alt="Logo" src="http://www.bitcoinmty.com/images/bitcoinMty-logoc.png" class="img-circle">
+           <img alt="Logo" src="https://www.bitcoinmty.com/images/bitcoinMty-logoc.png" class="img-circle">
        </div>
        <div class="col-md-11">
            <h3 class="text-center">
@@ -137,9 +137,9 @@ $btcDisplay3 = round($btcPriceusd2, 2);
            Escribe la direccion a donde deseas enviar tu pago, <mark>el valor sera tomado de la calculadora en bitcoins.</mark></br>
            Direccion:<input type="text" name="address" class="form-control" id="address" size="41" /> 
 
-           <a href="http://atm.bitcoinmty.com/qr/index.html" 
+           <a href="https://atm.bitcoinmty.com/qr/index.html" 
            target="popup" 
-           onclick="window.open('http://atm.bitcoinmty.com/qr/index.html','popup','width=400,height=400'); return false;">
+           onclick="window.open('https://atm.bitcoinmty.com/qr/index.html','popup','width=400,height=400'); return false;">
            <img src="1441121020_qr_code.png" width="32" height="32" title="QR" alt="QR">
         </a>  
 
