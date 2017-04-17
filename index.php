@@ -80,13 +80,15 @@ $btcDisplay3 = round($btcPriceusd2, 2);
         }    
     </script>
 
+<div align="center">
+    <a href="https://www.bitcoinmty.com/">
+        <img alt="Logo" src="https://www.bitcoinmty.com/images/bitcoinMty-logoc.png" >
+    </a>
+    <h3 align="center">Virtual Bitcoin ATM</h3>
+    <h4 align="center" style="color: gray">By BitcoinMTY</h4>    
 
-    <img style="position: absolute; left: 15px; top: 15px;" alt="Logo" src="https://www.bitcoinmty.com/images/bitcoinMty-logoc.png" >
-
-    <div style="height: 130px;">
-        <h3 align="center">Virtual Bitcoin ATM</h3>
-        <h4 align="center" style="color: gray">By BitcoinMTY</h4>    
-    </div>
+</div>
+    
 
     <div class="col-md-5" align="center">
         <div class="panel panel-primary">
